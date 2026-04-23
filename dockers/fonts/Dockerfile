@@ -18,3 +18,4 @@ RUN apt-get update \
     libjson-perl \
  && apt-get clean \
  && pip3 install fonttools==4.21.1 brotli zopfli
+ && rm -rf /var/lib/apt/lists/* \
